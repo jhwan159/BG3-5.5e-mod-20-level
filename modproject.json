@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "name": "BG3 2024 Level20",
+  "author": "BG3 2024 Level20 Project",
+  "version64": 36028797018963968,
+  "game_build": null,
+  "modules": [
+    {
+      "name": "RulesCore",
+      "folder": "BG3_2024_RulesCore",
+      "uuid": "2a89ed36-e216-499a-ad8a-f3552a517a79",
+      "dependencies": [],
+      "description": "행동·슬롯·집중·상태·판정"
+    },
+    {
+      "name": "Classes2024",
+      "folder": "BG3_2024_Classes2024",
+      "uuid": "2f9432c4-571d-470e-b89f-1c993295132a",
+      "dependencies": [
+        "RulesCore"
+      ],
+      "description": "직업 성장·자원·선택"
+    },
+    {
+      "name": "LegacyCompatibility",
+      "folder": "BG3_2024_LegacyCompatibility",
+      "uuid": "9a385fb6-6a6d-4f15-938b-bff2f56d1991",
+      "dependencies": [
+        "RulesCore",
+        "Classes2024"
+      ],
+      "description": "기존 BG3 종족·서브클래스 연결"
+    },
+    {
+      "name": "Origins2024",
+      "folder": "BG3_2024_Origins2024",
+      "uuid": "5380165f-a8e2-49c2-91af-eb0428acc380",
+      "dependencies": [
+        "RulesCore"
+      ],
+      "description": "배경·Species·Origin Feat"
+    },
+    {
+      "name": "Level20",
+      "folder": "BG3_2024_Level20",
+      "uuid": "9ef776a2-e007-4ded-bd2e-8669a93a607f",
+      "dependencies": [
+        "Classes2024"
+      ],
+      "description": "레벨 상한·UI·고레벨 슬롯·성장 연결"
+    },
+    {
+      "name": "Spells2024",
+      "folder": "BG3_2024_Spells2024",
+      "uuid": "92e239e9-1a53-458f-8ecb-04c6863ccdc9",
+      "dependencies": [
+        "RulesCore",
+        "Level20"
+      ],
+      "description": "기존 주문 갱신·고레벨 주문"
+    },
+    {
+      "name": "CampaignPatches",
+      "folder": "BG3_2024_CampaignPatches",
+      "uuid": "175e93e2-ef66-41fd-9e65-6ce79b764cf3",
+      "dependencies": [
+        "RulesCore",
+        "Classes2024",
+        "Level20",
+        "Spells2024"
+      ],
+      "description": "별도 XP·조우·퀘스트 호환"
+    }
+  ],
+  "profiles": {
+    "prototype": [
+      "LegacyCompatibility",
+      "Level20",
+      "Spells2024"
+    ],
+    "all-scaffolds": [
+      "RulesCore",
+      "Classes2024",
+      "LegacyCompatibility",
+      "Origins2024",
+      "Level20",
+      "Spells2024",
+      "CampaignPatches"
+    ]
+  }
+}

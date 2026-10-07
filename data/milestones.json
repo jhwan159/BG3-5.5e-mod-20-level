@@ -1,0 +1,67 @@
+{
+  "source": "Obsidian: BG3_2024_Level20_Vault/15_Mod_Plan/기획 — 첫 구현과 개발 순서",
+  "test_levels": [
+    1,
+    5,
+    11,
+    13,
+    17,
+    20
+  ],
+  "persistence_levels": [
+    12,
+    13,
+    19,
+    20
+  ],
+  "tasks": [
+    {
+      "id": "baseline",
+      "title": "현재 데이터 조사",
+      "evidence_required": "지원 빌드·UUID·성장표·슬롯·자원·지급 시점의 원본/변경 대조",
+      "status": "not_implemented"
+    },
+    {
+      "id": "fighter_champion",
+      "title": "Fighter/Champion 1~20",
+      "evidence_required": "Second Wind·Action Surge·Mastery·2/3/4회 공격·후반 특성의 레벨별 기대/실제값",
+      "status": "not_implemented"
+    },
+    {
+      "id": "wizard_evoker",
+      "title": "Wizard/Evoker 1~20",
+      "evidence_required": "준비·주문서·7~9레벨 슬롯·무료 시전·후반 특성의 UI/저장 확인",
+      "status": "not_implemented"
+    },
+    {
+      "id": "mastery",
+      "title": "Vex·Nick·Topple와 Light 추가 공격",
+      "evidence_required": "같은 턴 및 Action Surge 상호작용",
+      "status": "not_implemented"
+    },
+    {
+      "id": "existing_spells",
+      "title": "Cure Wounds·Healing Word·True Strike·Guidance",
+      "evidence_required": "수치·비용·집중 대조",
+      "status": "not_implemented"
+    },
+    {
+      "id": "high_spells",
+      "title": "Finger of Death·Sunburst·Power Word Kill",
+      "evidence_required": "7/8/9레벨 슬롯과 원문 효과",
+      "status": "not_implemented"
+    },
+    {
+      "id": "turn_core",
+      "title": "집중·턴당 슬롯 시전 제한·기본 상태",
+      "evidence_required": "경계값과 반응 시나리오",
+      "status": "not_implemented"
+    },
+    {
+      "id": "persistence",
+      "title": "저장·로드·재육성",
+      "evidence_required": "12/13/19/20레벨 수치와 선택 유지, 중복 없음",
+      "status": "not_implemented"
+    }
+  ]
+}

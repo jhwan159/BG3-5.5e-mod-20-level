@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bg3-2024-mod-tools"
+version = "0.1.0"
+description = "BG3 2024 Level 20 mod development scaffold and CLI"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+bg3mod = "bg3tool.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["bg3tool*"]
